@@ -1,1 +1,9 @@
 @use 'variables';
+@use 'sliderinternas';
+
+.slider_blog {
+    background-image: url(https://babilonialiteraria.com.ar/wp-content/uploads/2019/12/d50080_c4347bed3334475291d7c2ccafe2e54a-mv2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   }

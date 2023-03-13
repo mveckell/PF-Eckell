@@ -1,1 +1,99 @@
 @use 'variables';
+@use 'sliderinternas';
+
+.slider_espacios {
+    background-image: url(https://miro.medium.com/max/1200/1*bPv4wf2TqXJICgs6dHqGJA.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   }
+
+.lugar_titulo {
+	text-align: left;
+	font-size: variables.$font_h2_size;
+	color: variables.$color_1;
+	font-weight: 800;
+	padding: 1rem;
+}
+.lugar_texto {
+	text-align: left;
+	padding: 1rem;
+	font-size: variables.$font_h4_size;
+	color: variables.$color_1;
+	font-weight: 300;
+}
+p {
+	strong {
+		font-weight: 600;
+		font-family: variables.$font_family;
+		font-size: 1.5rem;
+        font-size: variables.$font_h4_size;
+		text-decoration: none;
+	}
+}
+.galeria_titulo {
+	text-align: left;
+	font-size: variables.$font_h2_size;
+	color: variables.$color_1;
+	margin-top: 20px;
+	margin-left: 70px;
+	font-weight: 800;
+	padding-bottom: 20px;
+}
+.galeria {
+	width: 100%;
+	height: auto;
+}
+.galeria_grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+	grid-gap: 5em;
+}
+.galeria_foto {
+	line-height: 0;
+	&:hover {
+		filter: blur(2px);
+		cursor: pointer;
+	}
+}
+@media (max-width: 768px) {
+	#grid_general {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
+	}
+	.lugar_titulo {
+		text-align: center;
+        font-size: variables.$font_h2_size*1;
+		color: variables.$color_1;
+		font-weight: 800;
+	}
+	.lugar_texto {
+		text-align: center;
+        font-size: variables.$font_h4_size;
+		color: variables.$color_1;
+		font-weight: 300;
+		width: 400px;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	.mapa_titulo {
+		text-align: center;
+		font-size: variables.$font_h3_size*1.7;
+		color: variables.$color_1;
+		font-weight: 800;
+	}
+    .recomendados_titulo {
+		text-align: center;
+		font-size: variables.$font_h3_size*1.7;
+		color: variables.$color_1;
+		font-weight: 800;
+	}
+	.galeria_titulo {
+		text-align: left;
+		font-size: variables.$font_h3_size*1.7;
+		color: variables.$color_1;
+		font-weight: 800;
+	}
+}
+

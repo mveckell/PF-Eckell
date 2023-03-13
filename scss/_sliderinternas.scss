@@ -1,0 +1,66 @@
+@use 'variables';
+
+#slider_internas {
+	width: 100vw;
+	height: 400px;
+	background-size: contain;
+	overflow: hidden;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	img {
+		width: 100vw;
+		height: 400px;
+	}
+}
+
+.slider_texto {
+	width: 700px;
+	height: 100px;
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	align-items: center;
+
+	h2 {
+		font-family: variables.$font_family; 
+		color: variables.$color_3;
+		font-size: variables.$font_h2_size;
+		font-weight: 600;
+	}
+}	
+
+.slider_agendacultural {
+	background-image: url(https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2018/11/unnamed-7.jpg?fit=1000%2C667&ssl=1);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.slider_contacto {
+  background-image: url(https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2018/11/unnamed-7.jpg?fit=1000%2C667&ssl=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ }
+
+ .slider_blog {
+  background-image: url(https://babilonialiteraria.com.ar/wp-content/uploads/2019/12/d50080_c4347bed3334475291d7c2ccafe2e54a-mv2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ }
+
+ .slider_cosasquehacer {
+  background-image: url(https://images.hdqwalls.com/wallpapers/alan-walker-dj-monochrome-4k-ze.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ }
+
+ .slider_espacios {
+  background-image: url(https://miro.medium.com/max/1200/1*bPv4wf2TqXJICgs6dHqGJA.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ }

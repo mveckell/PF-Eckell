@@ -1,0 +1,72 @@
+@use 'variables';
+
+/************************************ FORMULARIO ************************************/
+
+form {
+	grid: formulario;
+}
+.form_row {
+	align-items: center;
+	justify-content: center;
+	width: 700px;
+	margin-bottom: 30px;
+}
+.form_titulo {
+	font-size: variables.$font_h2_size;
+	color: variables.$color_1;
+	font-weight: 800;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+label {
+	font-family: variables.$font_family;
+	font-size: 1.5rem;
+	color: variables.$color_1;
+}
+.categorias {
+	font-family: variables.$font_family;
+	font-size: 1rem;
+}
+input {
+	border: #CCC 1px solid;
+}
+.form_button {
+	background-color: variables.$background_color_2;
+	color: variables.$color_3;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	text-decoration: none;
+	font-weight: bold;
+	font-variant: small-caps;
+	border-radius: 8rem;
+	text-align: center;
+	align-items: center;
+	border: none;
+	margin-top: 30px;
+	&:hover {
+		cursor: pointer;
+		background-color: variables.$background_color_2;
+		color: variables.$color_1;
+	}
+}
+@media (max-width: 768px) {
+	#grid_general {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
+	}
+	.form_row {
+		align-items: center;
+		justify-content: center;
+		width: 400px;
+	}
+	.form_titulo {
+		font-size: variables.$font_h3_size*1.7;
+	    color: variables.$color_1;
+	    font-weight: 800;
+		align-items: center;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}

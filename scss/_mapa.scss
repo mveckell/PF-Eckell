@@ -1,0 +1,37 @@
+@use 'variables';
+
+/************************************ MAPA ************************************/
+
+.buscador_contenedor {
+	margin-top: 3rem;
+}
+.mapa_contenedor {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mapa_titulo {
+	font-size: variables.$font_h2_size;
+	color: variables.$color_1;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+.mapa {
+	max-width: 100%;
+	height: 60vh;
+}
+@media (max-width: 768px) {
+	#grid_general {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
+	}
+	.mapa_titulo {
+		font-size: variables.$font_h3_size*1.7;
+	    color: variables.$color_1;
+	    font-weight: 800;
+		align-items: center;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+}

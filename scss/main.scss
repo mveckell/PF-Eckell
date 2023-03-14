@@ -8,6 +8,8 @@
 @use 'footer';
 @use 'form';
 @use 'mapa';
+@use 'mixing';
+
 
 /************************************ GENERALES ************************************/
 * {
@@ -24,6 +26,7 @@
 	 "main"
 	 "recomendados"
 	 "proximamente"
+	 "newsletter"
 	 "mapa"
 	 "formulario"
 	 "footer";
@@ -66,7 +69,7 @@ p {
 
 h1,h2,h3,h4 {
     text-align: center;
-  }
+}
 
 .button {
 		background-color: variables.$color_2;
@@ -86,8 +89,12 @@ h1,h2,h3,h4 {
             background: variables.$color_2;
 			cursor: pointer;
             color: variables.$color_1; 
-        }
-	    }
+		}	
+        .scale-up-center {
+			-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+					animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+		}
+}
 
 /************************************ HEADER ************************************/
 
@@ -110,10 +117,9 @@ header {
 .nav_principal {
 	font-family: variables.$font_family;
 	font-weight: 200;
-	display:flex;
 	margin-bottom: 0px;
-	align-items: center;
-	align-content: center;
+	display: flex;
+	@include contenidocentrado;
 	li {
 		text-decoration: none;
 		color: variables.$color_1;
@@ -121,8 +127,7 @@ header {
 		list-style: none;
 		text-align: center;
 		display: inline-block;
-		align-items: center;
-		align-content: center;
+		@include contenidocentrado;
 	}
 	a {
 		color: variables.$color_1;
@@ -163,11 +168,10 @@ main {
 	grid-area: main;
 }
 #slider {
+	@include contenidocentrado;
 	width: 100vw;
 	height: 600px;
 	overflow: hidden;
-	justify-content: center;
-	align-items: center;
 	display: flex;
 	background-image: url(https://variety.com/wp-content/uploads/2022/10/Arctic-Monkeys-pc-Zackery-Michael-436763_L2-B_08-300-dpi-e1666378299982.jpg);
 	background-repeat: no-repeat;
@@ -194,7 +198,7 @@ main {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
-	}
+	}	
 	.slider_texto {
 		height: 100px;
 		text-align: center;
@@ -230,16 +234,14 @@ main {
 .grid_recomendados_contenedor {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	@include contenidocentrado;
 	.card {
+		@include contenidocentrado;
 		width: 400px;
 		height: 550px;
 		text-align: center;
 		transition: all 0.25s;
 		overflow: hidden;
-		align-items: center;
-		justify-content: center;
 		border: none;
 		margin: 20px;
 		&:hover {
@@ -247,9 +249,8 @@ main {
 			box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
 		}
 		img {
+			@include contenidocentrado;
 			height: 300px;
-			align-items: center;
-			justify-content: center;
 			background-size: contain;
 			background-position: center;
 		}
@@ -271,11 +272,11 @@ main {
 		p {
 			font-size: variables.$font_p_size*1.4;
 			font-weight: 100;
-			width: 300px;
 			line-height: 1.4;
 			margin-top: 5px;
 		}
 		button {
+			@include contenidocentrado;
 			font-weight: 600;
 			border-radius: 6rem;
 			width: 50%;
@@ -284,8 +285,6 @@ main {
 			font-size: variables.$font_h4_size;
 			text-decoration: none;
 			font-variant: small-caps;
-			align-items: center;
-			justify-content: center;
 			border: none;
 			margin-bottom: 10px;
 			margin-top: 5px;
@@ -317,22 +316,18 @@ main {
 
 #proximamente {
 	grid: proximamente;
+	@include contenidocentrado;
 	height: 500px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	overflow: hidden;
 	background-position: center;
-	justify-content: center;
-	align-items: center;
 	display: flex;
 	background-image: url(https://i.ytimg.com/vi/A6rqu1FNSKU/maxresdefault.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	img {
-		width: 100vw;
-		height: 100vh;
-	}
+
 }
 .proximamente_texto {
 	height: 100px;

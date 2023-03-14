@@ -6,8 +6,7 @@ form {
 	grid: formulario;
 }
 .form_row {
-	align-items: center;
-	justify-content: center;
+	@include contenidocentrado;
 	width: 700px;
 	margin-bottom: 30px;
 }
@@ -31,6 +30,7 @@ input {
 	border: #CCC 1px solid;
 }
 .form_button {
+	@include contenidocentrado;
 	background-color: variables.$background_color_2;
 	color: variables.$color_3;
 	padding: 1rem 2rem;
@@ -39,8 +39,6 @@ input {
 	font-weight: bold;
 	font-variant: small-caps;
 	border-radius: 8rem;
-	text-align: center;
-	align-items: center;
 	border: none;
 	margin-top: 30px;
 	&:hover {

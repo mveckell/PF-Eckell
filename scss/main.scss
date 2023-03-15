@@ -90,10 +90,6 @@ h1,h2,h3,h4 {
 			cursor: pointer;
             color: variables.$color_1; 
 		}	
-        .scale-up-center {
-			-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-					animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-		}
 }
 
 /************************************ HEADER ************************************/
@@ -142,6 +138,7 @@ header {
 .nav-link {
 	margin: 10px;
 }
+
 .active {
 	color: variables.$color_2 !important;
 	font-weight: bold;

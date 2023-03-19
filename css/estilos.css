@@ -625,7 +625,7 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 100vw;
+  width: 100%;
   height: 600px;
   overflow: hidden;
   display: flex;
@@ -635,8 +635,8 @@ main {
   background-position: center center;
 }
 #slider img {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .slider_texto {
@@ -656,18 +656,24 @@ main {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
   }
+  #slider img {
+    width: 100%;
+    height: 100%;
+  }
   .slider_texto {
     height: 100px;
+    width: 200px;
     text-align: center;
     position: absolute;
-    margin: auto;
     color: #2a272e;
+    justify-content: center;
     align-items: center;
+    align-content: center;
   }
   .slider_texto h1 {
-    margin: 0px;
-    padding: 0px;
+    justify-content: center;
     align-items: center;
+    align-content: center;
     font-size: 4rem;
   }
 }

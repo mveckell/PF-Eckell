@@ -9,6 +9,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 100vw;
 }
 .mapa_titulo {
 	font-size: variables.$font_h2_size;
@@ -17,7 +18,7 @@
 	margin-bottom: 20px;
 }
 .mapa {
-	max-width: 100%;
+	max-width: 100vw;
 	height: 60vh;
 }
 @media (max-width: 768px) {

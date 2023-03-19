@@ -1,11 +1,12 @@
 @use 'variables';
+@use 'mixin' as *;
 
 /************************************ FOOTER ************************************/
 
 footer {
 	grid-area: footer;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	align-content: center;
 	background-color: #a055ef;
@@ -15,87 +16,71 @@ footer {
   
   .footer_logo {
 	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
+	@include contenidocentrado;
   }
   
   .links {
 	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-  }
-  
-  .links li {
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
-	font-size: 3rem;
-	list-style: none;
-	color: white;
-	margin-top: 10px;
-  }
-  
-  .links a {
-	text-decoration: none;
-	font-size: 1.5rem;
-	list-style: none;
-	color: white;
-	margin-top: 10px;
-	font-weight: 100;
-	line-height: 20px;
-	align-items: center;
-	text-align: center;
-	line-height: 0.2;
-  }
-  
-  
-  .links a:hover {
-	color: #2a272e;
-	text-decoration: none;
-	font-weight: bold;
+	@include contenidocentrado;
+
+	li {
+		@include contenidocentrado;
+		text-decoration: none;
+		font-size: 3rem;
+		list-style: none;
+		color: variables.$color_3;
+		text-align: center;
+	  }
+
+	a {
+		text-decoration: none;
+		font-size: 1.5rem;
+		list-style: none;
+		color: variables.$color_3;
+		font-weight: 100;
+		@include contenidocentrado;
+
+		&:hover {
+			color: variables.$color_1;
+			text-decoration: none;
+			font-weight: bold;
+		}	
+	}  
   }
   
   .entradas_blog {
 	display: flex;
-	line-height: 0.5;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
+	@include contenidocentrado;
+
+	li {
+		@include contenidocentrado;
+		text-decoration: none;
+		font-size: 3rem;
+		list-style: none;
+		color: variables.$color_3;
+		text-align: center;
+	  }
+	a {
+		text-decoration: none;
+		font-size: 1.5rem;
+		list-style: none;
+		color: variables.$color_3;
+		font-weight: 100;
+		@include contenidocentrado;
+
+		&:hover {
+			color: variables.$color_1;
+			text-decoration: none;
+			font-weight: bold;
+		}	
+	  }
   }
   
-  .entradas_blog li {
-	display: flex;
-	text-decoration: none;
-	font-size: 3rem;
-	list-style: none;
-	color: white;
-	margin-top: 10px;
-  }
-  
-  .entradas_blog a {
-	text-decoration: none;
-	font-size: 1.5rem;
-	list-style: none;
-	color: white;
-	margin-top: 10px;
-	font-weight: 100;
-	line-height: 0.2;
-  }
-  
-  .entradas_blog a:hover {
-	color: #2a272e;
-	font-weight: bold;
-	text-decoration: none;
-  }
   
   .footer_redes {
 	display: flex;
 	line-height: 0.5;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
+	@include contenidocentrado;
   }
   
   .footer_redes li {
@@ -129,40 +114,53 @@ footer {
     footer {
     grid-area: footer;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+	@include contenidocentrado;
     background-color: variables.$background_color_2;
-    height: 450px;
+    height: 500px;
     width: 100vw;
     }
     .footer_logo {
     display: flex;
-    align-items: center;
-    align-content: center;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	@include contenidocentrado;
     }
     .links {
     display: flex;
-    align-items: center;
-    align-content: center;
-    padding-bottom: 20px;
-    justify-content: center;
+    padding-bottom: 10px;
+	@include contenidocentrado;
     }
     .entradas_blog {
     display: flex;
-    align-items: center;
-    align-content: center;
-    padding-bottom: 20px;
-    justify-content: center;
+	padding-bottom: 10px;
+	@include contenidocentrado;
     }
     .footer_redes {
     display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+	padding-bottom: 20px;
+	@include contenidocentrado;
     }
 }
 
+@media (min-width: 768px) and (max-width: 999px) {
+	#grid_general {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-areas:
+	  "header"
+	  "main"
+	  "recomendados"
+	  "proximamente"
+	  "mapa"
+	  "formulario"
+	  "footer";
+	}
+	footer {
+		grid-area: footer;
+		display: flex;
+		@include contenidocentrado;
+		background-color: variables.$background_color_2;
+		height: 500px;
+		width: 100vw;
+		}
+	}	

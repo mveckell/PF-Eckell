@@ -3,7 +3,7 @@
 
 header {
     grid-area: header;
-    background-color: variables.$background_color_3;
+    background-color: aqua;
 
 	.logo {
 		&:hover {
@@ -20,13 +20,7 @@ header {
     display:inline-block;
     text-align: center;
 
-    .navbar-collapse{
-        justify-content: center;
-
-       }
-
     .navbar-nav {
-        color: variables.$color_1;
         text-decoration: none;
         li {
             text-decoration: none;
@@ -66,4 +60,4 @@ header {
         &:hover {
             cursor: pointer;
         }
-}    
+}       

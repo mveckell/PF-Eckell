@@ -482,7 +482,7 @@ input {
 }
 header {
   grid-area: header;
-  background-color: #ffffff;
+  background-color: aqua;
 }
 header .logo:hover {
   cursor: pointer;
@@ -496,11 +496,7 @@ header .logo:hover {
   display: inline-block;
   text-align: center;
 }
-.navbar .navbar-collapse {
-  justify-content: center;
-}
 .navbar .navbar-nav {
-  color: #2a272e;
   text-decoration: none;
 }
 .navbar .navbar-nav li {

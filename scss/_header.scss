@@ -45,6 +45,12 @@ header {
     text-decoration: underline !important;
 }
 
+.navbar-toggler {
+    color: var(--bs-navbar-color);
+    line-height: 1;
+
+}
+
 .header_redes {
         text-decoration: none;
         list-style: none;

@@ -16,7 +16,7 @@ header {
     font-family: variables.$font_family;
     font-size: 10rem;
     font-weight: 200;
-    width: 100%;
+    max-width: 100%;
     display:inline-block;
     text-align: center;
 
@@ -43,14 +43,6 @@ header {
     color: variables.$color_2 !important;
     font-weight: bold;
     text-decoration: underline !important;
-}
-
-.navbar-toggler {
-    color: grey;
-    line-height: 1;
-    border: 1px solid grey;
-    border-radius: .25rem;
-
 }
 
 .header_redes {

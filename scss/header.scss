@@ -3,7 +3,7 @@
 
 header {
     grid-area: header;
-    background-color: variables.$color_3;
+    background-color: variables.$background_color_3;
 
 	.logo {
 		&:hover {
@@ -43,6 +43,12 @@ header {
     color: variables.$color_2 !important;
     font-weight: bold;
     text-decoration: underline !important;
+}
+
+.navbar-toggler {
+    color: var(--bs-navbar-color);
+    line-height: 1;
+
 }
 
 .header_redes {

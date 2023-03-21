@@ -17,14 +17,14 @@ header {
     font-size: 10rem;
     font-weight: 200;
     width: 100%;
-    display:block;
+    display:inline-block;
     text-align: center;
 
     .navbar-nav {
         li {
             text-decoration: none;
             list-style: none;
-            display: block;
+            display: inline-block;
             @include contenidocentrado;
         }
         a {
@@ -52,12 +52,6 @@ header {
     border-radius: .25rem;
 
 }
-
-.navbar-collapse{
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem;
-   }
 
 .header_redes {
         text-decoration: none;

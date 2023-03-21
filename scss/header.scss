@@ -3,7 +3,7 @@
 
 header {
     grid-area: header;
-    background-color: aqua;
+    background-color: variables.$color_3;
 
 	.logo {
 		&:hover {
@@ -16,15 +16,13 @@ header {
     font-family: variables.$font_family;
     font-size: 10rem;
     font-weight: 200;
-    width: 100vw;
+    width: 100%;
     display:inline-block;
     text-align: center;
 
     .navbar-nav {
-        text-decoration: none;
         li {
             text-decoration: none;
-            color: variables.$color_1;
             list-style: none;
             display: inline-block;
             @include contenidocentrado;
@@ -51,7 +49,6 @@ header {
         text-decoration: none;
         list-style: none;
         margin-top: 10px;
-        margin-left: 0px;
         display: flex;
         @include contenidocentrado;
         li {

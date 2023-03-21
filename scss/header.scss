@@ -46,8 +46,10 @@ header {
 }
 
 .navbar-toggler {
-    color: var(--bs-navbar-color);
+    color: grey;
     line-height: 1;
+    border: 1px solid grey;
+    border-radius: .25rem;
 
 }
 

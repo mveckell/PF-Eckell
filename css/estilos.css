@@ -492,7 +492,7 @@ header .logo:hover {
   font-family: "Work Sans";
   font-size: 10rem;
   font-weight: 200;
-  max-width: 100%;
+  width: 100%;
   display: inline-block;
   text-align: center;
 }

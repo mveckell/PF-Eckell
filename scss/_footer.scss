@@ -6,12 +6,13 @@
 footer {
 	grid-area: footer;
 	display: flex;
+	position: relative;
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-	background-color: #a055ef;
+	background-color: variables.$background_color_2;
 	height: 250px;
-	width: 100vw; 
+	width: 100%; 
   }  
   
   .footer_logo {
@@ -117,7 +118,7 @@ footer {
 	@include contenidocentrado;
     background-color: variables.$background_color_2;
     height: 500px;
-    width: 100vw;
+    width: 100%;
     }
     .footer_logo {
     display: flex;
@@ -161,6 +162,6 @@ footer {
 		@include contenidocentrado;
 		background-color: variables.$background_color_2;
 		height: 500px;
-		width: 100vw;
+		width: 100%;
 		}
 	}	

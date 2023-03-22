@@ -8,7 +8,7 @@ form {
 }
 .form_row {
 	@include contenidocentrado;
-	width: 700px;
+	width: 600px;
 	margin-bottom: 30px;
 }
 .form_titulo {
@@ -57,7 +57,7 @@ input {
 	.form_row {
 		align-items: center;
 		justify-content: center;
-		width: 400px;
+		width: 300px;
 	}
 	.form_titulo {
 		font-size: variables.$font_h3_size*1.7;

@@ -522,9 +522,9 @@ header .logo:hover {
 }
 
 .navbar-toggler {
-  color: black;
-  background-color: aqua;
+  background-color: white !important;
   line-height: 1;
+  border: 1px solid black !important;
 }
 
 .header_redes {

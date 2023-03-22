@@ -696,6 +696,7 @@ main {
   grid-area: recomendados;
   letter-spacing: 0.03em;
   line-height: 1.6;
+  width: 100%;
 }
 
 .recomendados_titulo {
@@ -709,6 +710,7 @@ main {
 .grid_recomendados_contenedor {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -782,6 +784,7 @@ main {
 @media (max-width: 768px) {
   #grid_general {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
   }
@@ -792,6 +795,7 @@ main {
     align-items: center;
     margin: auto;
     margin-top: 20px;
+    width: 100%;
   }
 }
 /************************************ PROXIMAMENTE ************************************/

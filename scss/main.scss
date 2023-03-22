@@ -239,6 +239,7 @@ main {
 @media (max-width: 768px) {
 		#grid_general {
 			display: grid;
+			flex-wrap: wrap;
 			width: 100%;
 			grid-template-columns: 1fr;
 			grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";

@@ -5,11 +5,12 @@
 
 form {
 	grid: formulario;
+	@include contenidocentrado;
 }
 .form_row {
 	@include contenidocentrado;
-	width: 600px;
 	margin-bottom: 30px;
+	width: 600px;
 }
 .form_titulo {
 	font-size: variables.$font_h2_size;

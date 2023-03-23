@@ -95,6 +95,85 @@
   background-position: center center;
 }
 
+.container_blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 3rem;
+  gap: 6rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card__body h4 {
+  font-size: 2.25rem;
+  text-align: left;
+  margin: 5px;
+}
+.card__body p {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.tag-blue {
+  background: #56CCF2;
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__footer {
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.user {
+  display: flex;
+  gap: 1rem;
+  margin: 5px;
+}
+.user .user__image {
+  border-radius: 50%;
+}
+
 .slider_espacios {
   background-image: url(https://miro.medium.com/max/1200/1*bPv4wf2TqXJICgs6dHqGJA.jpeg);
   background-repeat: no-repeat;
@@ -178,6 +257,13 @@ p strong {
   margin: 30px;
 }
 
+.container_otro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+}
+
 @media (max-width: 768px) {
   #grid_general {
     display: grid;
@@ -226,7 +312,6 @@ p strong {
 }
 /************************************ FOOTER ************************************/
 footer {
-  grid-area: footer;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -383,7 +468,6 @@ footer {
     grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
   }
   footer {
-    grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,14 +480,17 @@ footer {
 /************************************ FORMULARIO ************************************/
 form {
   grid: formulario;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .form_row {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 600px;
   margin-bottom: 30px;
+  width: 600px;
 }
 
 .form_titulo {

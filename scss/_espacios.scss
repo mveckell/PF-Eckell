@@ -81,6 +81,14 @@ p {
 	}
 }
 
+.container_otro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+}
+
+
 @media (max-width: 768px) {
 	#grid_general {
 		display: grid;

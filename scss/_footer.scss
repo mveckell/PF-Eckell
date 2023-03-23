@@ -4,7 +4,6 @@
 /************************************ FOOTER ************************************/
 
 footer {
-	grid-area: footer;
 	display: flex;
 	position: relative;
 	justify-content: space-between;
@@ -157,7 +156,6 @@ footer {
 	  "footer";
 	}
 	footer {
-		grid-area: footer;
 		display: flex;
 		@include contenidocentrado;
 		background-color: variables.$background_color_2;

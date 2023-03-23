@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'sliderinternas';
+@use 'mixin' as *;
 
 .slider_espacios {
     background-image: url(https://miro.medium.com/max/1200/1*bPv4wf2TqXJICgs6dHqGJA.jpeg);
@@ -14,6 +15,7 @@
 	color: variables.$color_1;
 	font-weight: 800;
 	padding: 1rem;
+	@include contenidocentrado;
 }
 .lugar_texto {
 	text-align: left;
@@ -32,13 +34,11 @@ p {
 	}
 }
 .galeria_titulo {
-	text-align: left;
 	font-size: variables.$font_h2_size;
 	color: variables.$color_1;
-	margin-top: 20px;
-	margin-left: 70px;
 	font-weight: 800;
 	padding-bottom: 20px;
+	padding-top: 10px;
 }
 .galeria {
 	width: 100%;
@@ -56,6 +56,31 @@ p {
 		cursor: pointer;
 	}
 }
+
+.testimoniales_titulo {
+	font-size: variables.$font_h2_size;
+	color: variables.$color_1;
+	font-weight: 800;
+	padding-bottom: 20px;
+}
+
+.card-body {
+    h4 {
+		font-family: variables.$font_family; 
+		color: variables.$color_1;
+		font-size: variables.$font_h4_size;
+		font-size: 3rem;
+    }
+	p {
+		font-weight: 300;
+		font-family: variables.$font_family;
+		font-size: 1rem;
+        font-size: variables.$font_h4_size;
+		text-decoration: none;
+		margin: 30px;
+	}
+}
+
 @media (max-width: 768px) {
 	#grid_general {
 		display: grid;
@@ -77,6 +102,18 @@ p {
 		margin: auto;
 		margin-bottom: 10px;
 	}
+	.galeria_titulo {
+		text-align: center;
+		font-size: variables.$font_h3_size*1.7;
+		color: variables.$color_1;
+		font-weight: 800;
+	}
+	.testimoniales_titulo {
+		text-align: center;
+		font-size: variables.$font_h3_size*1.7;
+		color: variables.$color_1;
+		font-weight: 800;
+	}
 	.mapa_titulo {
 		text-align: center;
 		font-size: variables.$font_h3_size*1.7;
@@ -85,12 +122,6 @@ p {
 	}
     .recomendados_titulo {
 		text-align: center;
-		font-size: variables.$font_h3_size*1.7;
-		color: variables.$color_1;
-		font-weight: 800;
-	}
-	.galeria_titulo {
-		text-align: left;
 		font-size: variables.$font_h3_size*1.7;
 		color: variables.$color_1;
 		font-weight: 800;

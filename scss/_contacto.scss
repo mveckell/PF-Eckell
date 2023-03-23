@@ -1,9 +1,10 @@
 @use 'variables';
 @use 'sliderinternas';
+@use 'mixin' as *;
 
 .slider_contacto {
     background-image: url(https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2018/11/unnamed-7.jpg?fit=1000%2C667&ssl=1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-   }
+   } 

@@ -95,6 +95,30 @@
   background-position: center center;
 }
 
+#proyectos .titulo-main {
+  font-size: 4rem;
+  color: #2a272e;
+  font-weight: 800;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#proyectos .articles {
+  margin: 0rem;
+  padding: 2rem 4rem;
+}
+#proyectos .cards {
+  padding: 0.7rem;
+}
+#proyectos .card {
+  border: none;
+}
+#proyectos .card-body {
+  padding: 0rem;
+  margin: 0rem;
+}
+
 .slider_espacios {
   background-image: url(https://miro.medium.com/max/1200/1*bPv4wf2TqXJICgs6dHqGJA.jpeg);
   background-repeat: no-repeat;
@@ -108,6 +132,9 @@
   color: #2a272e;
   font-weight: 800;
   padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .lugar_texto {
@@ -127,13 +154,11 @@ p strong {
 }
 
 .galeria_titulo {
-  text-align: left;
   font-size: 4rem;
   color: #2a272e;
-  margin-top: 20px;
-  margin-left: 70px;
   font-weight: 800;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .galeria {
@@ -153,6 +178,28 @@ p strong {
 .galeria_foto:hover {
   filter: blur(2px);
   cursor: pointer;
+}
+
+.testimoniales_titulo {
+  font-size: 4rem;
+  color: #2a272e;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+.card-body h4 {
+  font-family: "Work Sans";
+  color: #2a272e;
+  font-size: 1.5rem;
+  font-size: 3rem;
+}
+.card-body p {
+  font-weight: 300;
+  font-family: "Work Sans";
+  font-size: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 30px;
 }
 
 @media (max-width: 768px) {
@@ -176,6 +223,18 @@ p strong {
     margin: auto;
     margin-bottom: 10px;
   }
+  .galeria_titulo {
+    text-align: center;
+    font-size: 3.4rem;
+    color: #2a272e;
+    font-weight: 800;
+  }
+  .testimoniales_titulo {
+    text-align: center;
+    font-size: 3.4rem;
+    color: #2a272e;
+    font-weight: 800;
+  }
   .mapa_titulo {
     text-align: center;
     font-size: 3.4rem;
@@ -184,12 +243,6 @@ p strong {
   }
   .recomendados_titulo {
     text-align: center;
-    font-size: 3.4rem;
-    color: #2a272e;
-    font-weight: 800;
-  }
-  .galeria_titulo {
-    text-align: left;
     font-size: 3.4rem;
     color: #2a272e;
     font-weight: 800;

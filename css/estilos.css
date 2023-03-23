@@ -74,6 +74,13 @@
   background-position: center center;
 }
 
+.carousel-caption h4 {
+  color: #ffffff;
+}
+.carousel-caption button {
+  margin-bottom: 30px;
+}
+
 .slider_contacto {
   background-image: url(https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2018/11/unnamed-7.jpg?fit=1000%2C667&ssl=1);
   background-repeat: no-repeat;
@@ -426,7 +433,7 @@ input {
     width: 300px;
   }
   .form_titulo {
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: #2a272e;
     font-weight: 800;
     align-items: center;

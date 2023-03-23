@@ -95,30 +95,6 @@
   background-position: center center;
 }
 
-#proyectos .titulo-main {
-  font-size: 4rem;
-  color: #2a272e;
-  font-weight: 800;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#proyectos .articles {
-  margin: 0rem;
-  padding: 2rem 4rem;
-}
-#proyectos .cards {
-  padding: 0.7rem;
-}
-#proyectos .card {
-  border: none;
-}
-#proyectos .card-body {
-  padding: 0rem;
-  margin: 0rem;
-}
-
 .slider_espacios {
   background-image: url(https://miro.medium.com/max/1200/1*bPv4wf2TqXJICgs6dHqGJA.jpeg);
   background-repeat: no-repeat;

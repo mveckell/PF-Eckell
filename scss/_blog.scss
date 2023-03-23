@@ -8,33 +8,3 @@
     background-size: cover;
     background-position: center center;
    }
-
-#proyectos{
-
-    .titulo-main{
-	   font-size: variables.$font_h2_size;
-	   color: variables.$color_1;
-	   font-weight: 800;
-	   padding: 1rem;
-       @include contenidocentrado;
-    }   
-
-    .articles{
-        margin: 0rem;
-        padding: 2rem 4rem;
-    } 
-        .cards{
-             padding: 0.7rem;
-            }
-     
-              .card{
-                border: none; 
-            }
-     
-                .card-body{
-                   padding: 0rem;
-                   margin: 0rem;
-                }
-     
-    }
-         

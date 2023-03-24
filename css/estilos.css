@@ -90,6 +90,7 @@
 
 .contacto {
   margin-top: 30px;
+  width: 100%;
 }
 
 .contacto_titulo {
@@ -124,6 +125,10 @@ p strong {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
+  }
+  .contacto {
+    margin-top: 30px;
+    width: 100%;
   }
   .contacto_texto {
     text-align: center;

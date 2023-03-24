@@ -11,6 +11,7 @@
 
    .contacto {
 	margin-top: 30px;
+    width: 100%;
 }
    .contacto_titulo {
 	text-align: left;
@@ -43,6 +44,10 @@
 		grid-template-columns: 1fr;
 		grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
 	}
+    .contacto {
+        margin-top: 30px;
+        width: 100%;
+    }
 	.contacto_texto {
 		text-align: center;
         font-size: variables.$font_h2_size*1;

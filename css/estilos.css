@@ -88,6 +88,59 @@
   background-position: center center;
 }
 
+.contacto {
+  margin-top: 30px;
+}
+
+.contacto_titulo {
+  text-align: left;
+  font-size: 4rem;
+  color: #2a272e;
+  font-weight: 800;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contacto_texto {
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #2a272e;
+  font-weight: 300;
+}
+
+p strong {
+  font-weight: 600;
+  font-family: "Work Sans";
+  font-size: 1.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #grid_general {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "recomendados" "proximamente" "mapa" "formulario" "footer";
+  }
+  .contacto_texto {
+    text-align: center;
+    font-size: 4rem;
+    color: #2a272e;
+    font-weight: 800;
+  }
+  .contacto_texto {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2a272e;
+    font-weight: 300;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
 .slider_blog {
   background-image: url(https://babilonialiteraria.com.ar/wp-content/uploads/2019/12/d50080_c4347bed3334475291d7c2ccafe2e54a-mv2.jpg);
   background-repeat: no-repeat;
@@ -141,21 +194,33 @@ img {
   margin: 5px;
 }
 
-.tag-blue {
-  background: #56CCF2;
-  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+.tag-violet {
+  background: #a055ef;
+  background: linear-gradient(to bottom, #ab75f2, #a055ef);
   color: #fafafa;
 }
 
-.tag-brown {
-  background: #D1913C;
-  background: linear-gradient(to bottom, #FFD194, #D1913C);
+.tag-orange {
+  background: #ef6641;
+  background: linear-gradient(to bottom, #ef876f, #ef6641);
   color: #fafafa;
 }
 
 .tag-red {
   background: #cb2d3e;
   background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.tag-blue {
+  background: #485dd9;
+  background: linear-gradient(to bottom, #6680ed, #485dd9);
+  color: #fafafa;
+}
+
+.tag-pink {
+  background: #ef8dea;
+  background: linear-gradient(to bottom, #f4a8f4, #ef8dea);
   color: #fafafa;
 }
 

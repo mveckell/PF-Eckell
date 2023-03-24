@@ -57,21 +57,33 @@
     margin: 5px;  
   }
   
-  .tag-blue {
-    background: #56CCF2;
-    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  .tag-violet {
+    background: #a055ef;
+    background: linear-gradient(to bottom, #ab75f2, #a055ef);
     color: #fafafa;
   }
   
-  .tag-brown {
-    background: #D1913C;
-    background: linear-gradient(to bottom, #FFD194, #D1913C);
+  .tag-orange {
+    background: #ef6641;
+    background: linear-gradient(to bottom, #ef876f, #ef6641);
     color: #fafafa;
   }
   
   .tag-red {
     background: #cb2d3e;
     background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+  }
+
+  .tag-blue {
+    background: #485dd9;
+    background: linear-gradient(to bottom, #6680ed, #485dd9);
+    color: #fafafa;
+  }
+
+  .tag-pink {
+    background: #ef8dea;
+    background: linear-gradient(to bottom, #f4a8f4, #ef8dea);
     color: #fafafa;
   }
   

@@ -72,10 +72,10 @@ p {
 	@include contenidocentrado;
 }
 
-.card {
-    width: 100% !important;
+.card-espacios {
 	margin: auto;
 	@include contenidocentrado;
+	width: 100%;
 
 	.card-body {
 		h4 {

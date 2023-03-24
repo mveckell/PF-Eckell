@@ -12,6 +12,7 @@
    .contacto {
 	margin-top: 30px;
     width: 100%;
+    overflow: hidden;
 }
    .contacto_titulo {
 	text-align: left;
@@ -20,6 +21,7 @@
 	font-weight: 800;
 	padding: 1rem;
 	@include contenidocentrado;
+    overflow: hidden;
 }
     .contacto_texto {
 	text-align: left;
@@ -27,6 +29,7 @@
 	font-size: variables.$font_h4_size;
 	color: variables.$color_1;
 	font-weight: 300;
+    overflow: hidden;
 }
     p {
 	    strong {
@@ -35,6 +38,7 @@
 		font-size: 1.5rem;
         font-size: variables.$font_h4_size;
 		text-decoration: none;
+        overflow: hidden;
 	}
 }
 
@@ -47,19 +51,20 @@
     .contacto {
         margin-top: 30px;
         width: 100%;
+        overflow: hidden;
     }
-	.contacto_texto {
+	.contacto_titulo {
 		text-align: center;
         font-size: variables.$font_h2_size*1;
 		color: variables.$color_1;
 		font-weight: 800;
+        overflow: hidden;
 	}
 	.contacto_texto {
 		text-align: center;
         font-size: variables.$font_h4_size;
 		color: variables.$color_1;
 		font-weight: 300;
-		width: 400px;
 		margin: auto;
 		margin-bottom: 10px;
 	} 

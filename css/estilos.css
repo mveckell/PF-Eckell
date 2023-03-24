@@ -91,6 +91,7 @@
 .contacto {
   margin-top: 30px;
   width: 100%;
+  overflow: hidden;
 }
 
 .contacto_titulo {
@@ -102,6 +103,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  overflow: hidden;
 }
 
 .contacto_texto {
@@ -110,6 +112,7 @@
   font-size: 1.5rem;
   color: #2a272e;
   font-weight: 300;
+  overflow: hidden;
 }
 
 p strong {
@@ -118,6 +121,7 @@ p strong {
   font-size: 1.5rem;
   font-size: 1.5rem;
   text-decoration: none;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -129,19 +133,20 @@ p strong {
   .contacto {
     margin-top: 30px;
     width: 100%;
+    overflow: hidden;
   }
-  .contacto_texto {
+  .contacto_titulo {
     text-align: center;
     font-size: 4rem;
     color: #2a272e;
     font-weight: 800;
+    overflow: hidden;
   }
   .contacto_texto {
     text-align: center;
     font-size: 1.5rem;
     color: #2a272e;
     font-weight: 300;
-    width: 400px;
     margin: auto;
     margin-bottom: 10px;
   }
@@ -362,7 +367,6 @@ p strong {
     font-size: 1.5rem;
     color: #2a272e;
     font-weight: 300;
-    width: 400px;
     margin: auto;
     margin-bottom: 10px;
   }

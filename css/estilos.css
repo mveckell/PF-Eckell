@@ -179,6 +179,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  width: 100px;
 }
 
 .lugar_titulo {
@@ -242,26 +243,35 @@ p strong {
   padding-bottom: 20px;
 }
 
-.card-body h4 {
+.container_otro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  width: 100% !important;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.card .card-body h4 {
   font-family: "Work Sans";
   color: #2a272e;
   font-size: 1.5rem;
   font-size: 3rem;
 }
-.card-body p {
+.card .card-body p {
   font-weight: 300;
   font-family: "Work Sans";
   font-size: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
   margin: 30px;
-}
-
-.container_otro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6rem;
 }
 
 @media (max-width: 768px) {
@@ -308,6 +318,13 @@ p strong {
     font-size: 3.4rem;
     color: #2a272e;
     font-weight: 800;
+  }
+  .container_otro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 }
 /************************************ FOOTER ************************************/

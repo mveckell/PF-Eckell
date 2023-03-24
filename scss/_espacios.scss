@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+	width: 100px;
    }
 
 .lugar_titulo {
@@ -64,28 +65,34 @@ p {
 	padding-bottom: 20px;
 }
 
-.card-body {
-    h4 {
-		font-family: variables.$font_family; 
-		color: variables.$color_1;
-		font-size: variables.$font_h4_size;
-		font-size: 3rem;
-    }
-	p {
-		font-weight: 300;
-		font-family: variables.$font_family;
-		font-size: 1rem;
-        font-size: variables.$font_h4_size;
-		text-decoration: none;
-		margin: 30px;
-	}
-}
-
 .container_otro {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 6rem;
+    gap: 2rem;
+	@include contenidocentrado;
+}
+
+.card {
+    width: 100% !important;
+	margin: auto;
+	@include contenidocentrado;
+
+	.card-body {
+		h4 {
+			font-family: variables.$font_family; 
+			color: variables.$color_1;
+			font-size: variables.$font_h4_size;
+			font-size: 3rem;
+		}
+		p {
+			font-weight: 300;
+			font-family: variables.$font_family;
+			font-size: 1rem;
+			font-size: variables.$font_h4_size;
+			text-decoration: none;
+			margin: 30px;
+		}
+	}
 }
 
 
@@ -128,11 +135,11 @@ p {
 		color: variables.$color_1;
 		font-weight: 800;
 	}
-    .recomendados_titulo {
-		text-align: center;
-		font-size: variables.$font_h3_size*1.7;
-		color: variables.$color_1;
-		font-weight: 800;
+	.container_otro {
+		display: flex;
+		flex-wrap: wrap;
+		@include contenidocentrado;
 	}
 }
+
 

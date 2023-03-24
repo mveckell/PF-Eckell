@@ -76,6 +76,7 @@ p {
 	margin: auto;
 	@include contenidocentrado;
 	width: 100%;
+	background-color: variables.$background_color_3;
 
 	.card-body {
 		h4 {

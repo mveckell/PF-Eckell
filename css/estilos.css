@@ -258,6 +258,7 @@ p strong {
   align-items: center;
   align-content: center;
   width: 100%;
+  background-color: #ffffff;
 }
 .card-espacios .card-body h4 {
   font-family: "Work Sans";

@@ -40,7 +40,7 @@
 }
 
 .slider_contacto {
-  background-image: url(https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2018/11/unnamed-7.jpg?fit=1000%2C667&ssl=1);
+  background-image: url(https://images.hdqwalls.com/wallpapers/alan-walker-dj-monochrome-4k-ze.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -48,13 +48,6 @@
 
 .slider_blog {
   background-image: url(https://babilonialiteraria.com.ar/wp-content/uploads/2019/12/d50080_c4347bed3334475291d7c2ccafe2e54a-mv2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.slider_cosasquehacer {
-  background-image: url(https://images.hdqwalls.com/wallpapers/alan-walker-dj-monochrome-4k-ze.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -82,7 +75,7 @@
 }
 
 .slider_contacto {
-  background-image: url(https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2018/11/unnamed-7.jpg?fit=1000%2C667&ssl=1);
+  background-image: url(https://images.hdqwalls.com/wallpapers/alan-walker-dj-monochrome-4k-ze.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -106,22 +99,19 @@
   overflow: hidden;
 }
 
-.contacto_texto {
+.categoria_contacto {
   text-align: left;
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding-top: 6rem;
   color: #2a272e;
-  font-weight: 300;
-  overflow: hidden;
-}
-
-p strong {
-  font-weight: 600;
-  font-family: "Work Sans";
-  font-size: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  align-items: center;
   text-decoration: none;
-  overflow: hidden;
+  list-style: none;
+}
+.categoria_contacto strong {
+  color: #a055ef;
+  font-size: 2.4rem;
 }
 
 @media (max-width: 768px) {
@@ -149,6 +139,14 @@ p strong {
     font-weight: 300;
     margin: auto;
     margin-bottom: 10px;
+  }
+  .categoria_contacto {
+    text-align: left;
+    padding: 1rem;
+    color: #2a272e;
+    font-size: 2rem;
+    margin-top: 1rem;
+    align-items: center;
   }
 }
 .slider_blog {

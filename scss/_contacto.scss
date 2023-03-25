@@ -3,17 +3,16 @@
 @use 'mixin' as *;
 
 .slider_contacto {
-    background-image: url(https://i1.wp.com/lavereda.com.ar/wp-content/uploads/2018/11/unnamed-7.jpg?fit=1000%2C667&ssl=1);
+    background-image: url(https://images.hdqwalls.com/wallpapers/alan-walker-dj-monochrome-4k-ze.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-   } 
-
+   }  
    .contacto {
 	margin-top: 30px;
     width: 100%;
     overflow: hidden;
-}
+    }
    .contacto_titulo {
 	text-align: left;
 	font-size: variables.$font_h2_size;
@@ -22,25 +21,22 @@
 	padding: 1rem;
 	@include contenidocentrado;
     overflow: hidden;
-}
-    .contacto_texto {
-	text-align: left;
-	padding: 1rem;
-	font-size: variables.$font_h4_size;
-	color: variables.$color_1;
-	font-weight: 300;
-    overflow: hidden;
-}
-    p {
-	    strong {
-		font-weight: 600;
-		font-family: variables.$font_family;
-		font-size: 1.5rem;
-        font-size: variables.$font_h4_size;
-		text-decoration: none;
-        overflow: hidden;
-	}
-}
+    }
+    .categoria_contacto {
+    text-align: left;
+    padding-top: 6rem;
+    color: variables.$color_1;
+	font-size: variables.$font_h3_size;
+	margin-top: 1rem;
+	align-items: center;
+	text-decoration: none;
+    list-style: none;
+	   strong {
+	   color: variables.$color_2;
+	   font-size: variables.$font_h3_size*1.2;
+
+	   }	
+    }
 
 @media (max-width: 768px) {
 	#grid_general {
@@ -68,4 +64,12 @@
 		margin: auto;
 		margin-bottom: 10px;
 	} 
+	.categoria_contacto {
+		text-align: left;
+		padding: 1rem;
+		color: variables.$color_1;
+		font-size: variables.$font_h3_size;
+		margin-top: 1rem;
+		align-items: center;
+	}
 }       
